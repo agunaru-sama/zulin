@@ -1,0 +1,91 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root{
+  --bg-main: #fff6f9;
+  --paper: #fffdfc;
+  --envelope: #f2d7de;
+  --envelope-dark: #e7c2cc;
+  --accent: #a64d6d;
+  --accent-soft: #c27a93;
+  --text-main: #5c3a46;
+  --shadow: rgba(120, 80, 95, 0.25);
+}
+
+body {
+  height: 100vh;
+  background: linear-gradient(135deg, #fff8fb, #fdeef4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Crimson Text', serif;
+}
+
+/* 404 Page */
+.error {
+  width: 100%;
+  max-width: 760px;
+  padding: 48px;
+  text-align: center;
+}
+
+.error h1 {
+  font-size: 70px;
+  color: #e11d74;
+  font-weight: 700;
+}
+
+.error h2 {
+  font-size: 22px;
+  margin-bottom: 18px;
+  color: #be185d;
+}
+
+.error p {
+  font-size: 14px;
+  color: #9d174d;
+  margin-bottom: 24px;
+}
+
+.error button {
+  background: #f9a8d4;
+  border: none;
+  padding: 12px 26px;
+  border-radius: 999px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 8px 20px rgba(236,72,153,0.25);
+}
+
+.error button:hover {
+  background: #ec4899;
+  transform: translateY(-3px);
+  box-shadow: 0 12px 25px rgba(236,72,153,0.35);
+}
+
+/* Card Mode */
+body.card-mode {
+  font-family: 'Crimson Text', serif;
+  background: #111;
+  color: #fff;
+  justify-content: flex-start;
+  padding-top: 50px;
+}
+
+.card-paper{
+  background: var(--paper);
+  border: 1px solid #f1dfe6;
+  box-shadow: 0 25px 60px var(--shadow);
+}
+
+.card-text{
+  color: var(--text-main);
+}
+
+.card-accent{
+  color: var(--accent);
+}
+
+.handwritten { font-family: 'Dancing Script', cursive; }
+.perspective { perspective: 1500px; }

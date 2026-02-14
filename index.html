@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+<title>Happy Valentine 💗</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="app">
+
+    <!-- OPENING -->
+    <div class="opening-screen" id="openingScreen">
+        <h1>Enter Your Name 💌</h1>
+        <input type="text" id="crushName" placeholder="Type name here..." />
+        <button id="startButton">Start 💖</button>
+    </div>
+
+    <!-- MAIN -->
+    <div class="main-wrapper" id="mainContent" style="display:none;">
+
+        <div class="card">
+            <h1 class="animated-text">
+                Happy Valentine, <span id="displayName"></span>! 💕
+            </h1>
+
+            <div class="heart"></div>
+
+            <div class="message-wrapper">
+                <div id="messageContainer"></div>
+            </div>
+        </div>
+
+        <!-- BUTTON DI LUAR CARD -->
+        <div class="button-area">
+            <button id="nextPageButton">Skip ⏭️</button>
+            <button id="giftButton" style="display:none;">Next 🤍</button>
+        </div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
